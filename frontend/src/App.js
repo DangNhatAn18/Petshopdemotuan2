@@ -4,11 +4,11 @@ import './grid.css';
 import Home from './components/Home';
 import Product from './components/product/Product';
 import AddProduct from './components/product/AddProduct';
-
+import EditProduct from './components/product/EditProduct';
 
 function App() {
  
-  return (
+  return (  
 
 <div className='app'>
 <div className="sidebar">
@@ -162,7 +162,7 @@ function App() {
  <Route path='/' element={<Home/>}/>
  <Route path='/product' element={<Product/>}/>
  <Route path='/addProduct' element={<AddProduct/>}/>
-
+ <Route path='/editProduct/:id' element={<EditProduct/>}/>
 </Routes>
  
 </div>
