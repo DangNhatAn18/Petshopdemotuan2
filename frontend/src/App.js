@@ -1,10 +1,18 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import './grid.css';
+import './Add.css';
 import Home from './components/Home';
 import Product from './components/product/Product';
 import AddProduct from './components/product/AddProduct';
 import EditProduct from './components/product/EditProduct';
+import Category from './components/category/Category';
+import AddCategory from './components/category/AddCategory';
+import EditCategory from './components/category/EditCategory';
+import User from './components/user/User';
+import AddUser from './components/user/AddUser';
+import EditUser from './components/user/EditUser';
+
 
 function App() {
  
@@ -44,15 +52,15 @@ function App() {
             </a>
         </li>
         <li>
-            <a href="/addProduct">
+            <a href="/category">
                 <i className='bx bx-shopping-bag'></i>
-                <span>THÊM SẢN PHẨM</span>
+                <span>QUẢN LÍ DANH MỤC</span>
             </a>
         </li>
         <li>
-            <a href="#">
-                <i className='bx bx-chart'></i>
-                <span>DANH MUC</span>
+            <a href="/user">
+                <i className='bx bx-shopping-bag'></i>
+                <span>QUẢN LÍ NGƯỜI DÙNG</span>
             </a>
         </li>
         <li className="sidebar-submenu">
@@ -75,49 +83,6 @@ function App() {
                 <li>
                     <a href="#">
                         Kết nối khác
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li className="sidebar-submenu">
-            <a href="#" className="sidebar-menu-dropdown">
-                <i className='bx bx-category'></i>
-                <span>project</span>
-                <div className="dropdown-icon"></div>
-            </a>
-            <ul className="sidebar-menu sidebar-menu-dropdown-content">
-                <li>
-                    <a href="#">
-                        list
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        add project
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li className="sidebar-submenu">
-            <a href="#" className="sidebar-menu-dropdown">
-                <i className='bx bx-category'></i>
-                <span>e-commerce</span>
-                <div className="dropdown-icon"></div>
-            </a>
-            <ul className="sidebar-menu sidebar-menu-dropdown-content">
-                <li>
-                    <a href="#">
-                        list product
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        add product
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        orders
                     </a>
                 </li>
             </ul>
@@ -163,6 +128,12 @@ function App() {
  <Route path='/product' element={<Product/>}/>
  <Route path='/addProduct' element={<AddProduct/>}/>
  <Route path='/editProduct/:id' element={<EditProduct/>}/>
+ <Route path='/category' element={<Category/>}/>
+ <Route path='/addCategory' element={<AddCategory/>}/>
+ <Route path='/editCategory/:id' element={<EditCategory/>}/>
+ <Route path='/user' element={<User/>}/>
+ <Route path='/addUser' element={<AddUser/>}/>
+ <Route path='/editUser/:id' element={<EditUser/>}/>
 </Routes>
  
 </div>

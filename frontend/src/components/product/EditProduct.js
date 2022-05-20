@@ -36,64 +36,75 @@ function EditProduct() {
 
     return (
         <div className="main">
-        <div className="main-header">
-            <div className="mobile-toggle" id="mobile-toggle">
-                <i className='bx bx-menu-alt-right'></i>
+            <div className="main-header">
+                <div className="mobile-toggle" id="mobile-toggle">
+                    <i className='bx bx-menu-alt-right'></i>
+                </div>
+                <div className="main-title">
+                    -Quản lí thú cưng -Cập nhật
+                </div>
             </div>
-            <div className="main-title">
-                -Quản lí thú cưng -Thêm mặt hàng
-            </div>
-        </div>
-        <div className="main-content">
+        <div className="page-body">
             <div className="row">
-
+                <div className="col-sm-12">
+                <div class="main-content">
+            <div class="row">
+                
             </div>
-            <div className="box">
-                <div className="box-header">
-                    <div className="control">
-
-                        <div className="row">
-
-                            <div className="col-md-6">
-                                <form  >
-                                    <div className="form-group">
-                                        <label for="exampleFormControlInput1">Tên thú cưng</label>
-                                        <input value={name}
-                                            onChange={(e) => setData({ ...data, name: e.target.value })}
-                                            type="text" className="form-control" />
+            <div class="box">
+                <div class="box-header">
+                            <form>
+                                    <div className="form-group row">
+                                        <label className="col-sm-2 col-form-label">Tên mới</label>
+                                        <div className="col-sm-10">
+                                            <input value={data.name}
+                                                onChange={(e) => setData({ ...data, name: e.target.value })} type="text" className="form-control"
+                                            placeholder="Nhập tên thú cưng"/>
+                                        </div>
                                     </div>
-
-                                    <div className="form-group">
-                                        <label for="exampleFormControlInput1">Loại</label>
-                                        <input value={breed}
-                                            onChange={(e) => setData({ ...data, breed: e.target.value })}
-                                            type="text" className="form-control" />
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label" >Loại</label>
+                                        <div class="col-sm-10">
+                                            <select name="select" class="form-control" value={data.breed}
+                                                onChange={(e) => setData({ ...data, breed: e.target.value })}>
+                                                <option value="opt1">Chọn Loại</option>
+                                                <option value="Chó">Chó</option>
+                                                <option value="Mèo">Mèo</option>
+                                                <option value="Rùa">Rùa</option>
+                                                <option value="Hamster">Hamster</option>
+                                                <option value="Toy">Toy</option>
+                                                <option value="Food">Food</option>
+                                            </select>
+                                        </div>
                                     </div>
-
-                                    <div className="form-group">
-                                        <label for="exampleFormControlInput1">Giá tiền</label>
-                                        <input value={price}
-                                            onChange={(e) => setData({ ...data, price: e.target.value })}
-                                            type="text" className="form-control" />
+                                    <div className="form-group row">
+                                        <label className="col-sm-2 col-form-label">Giá tiền</label>
+                                        <div className="col-sm-10">
+                                            <input value={data.price}
+                                                onChange={(e) => setData({ ...data, price: e.target.value })} type="text" className="form-control"/>
+                                        </div>
                                     </div>
-                                    <div className="form-group">
-                                        <label for="exampleFormControlTextarea1">mô tả</label>
-                                        <textarea value={description}
-                                            onChange={(e) => setData({ ...data, description: e.target.value })}
-                                            className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    </div>
-                                    <div className="custom-file">
-
-                                        <label className="custom-file-label" for="customFile">Them anh</label>
-                                        <input value={imageUrl}
-                                                onChange={(e) => setData({ ...data, imageUrl: e.target.value })}
-                                            type="text" className="custom-file-input" id="customFile" />
-
-                                    </div>
-
-
-                                    <input onClick={onSubmit} type='submit' />
-                                </form>
+                                                <div className="form-group row">
+                                                    <label className="col-sm-2 col-form-label">Sửa ảnh</label>
+                                                    <div className="col-sm-10">
+                                                        <input value={data.imageUrl}
+                                                    onChange={(e) => setData({ ...data, imageUrl: e.target.value })} type="text" className="form-control"/>
+                                                    </div>
+                                                </div>
+                                            <div className="form-group row">
+                                                <label className="col-sm-2 col-form-label">Mô Tả</label>
+                                                 <div className="col-sm-10">
+                                                     <textarea value={data.description}
+                                                onChange={(e) => setData({ ...data, description: e.target.value })} rows="5" cols="5" className="form-control"
+                                                    placeholder="Ghi chú mô tả thú cưng" ></textarea>
+                                          </div>
+                                         </div>
+                                         <div className="form-group row" >
+                                         <div className="col-sm-10">
+                                            <input onClick={onSubmit} type='submit' value="Cập nhật"/>
+                                            </div>
+                                         </div>
+                                    </form>
                             </div>
                         </div>
 

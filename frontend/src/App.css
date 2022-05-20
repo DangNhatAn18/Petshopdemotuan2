@@ -25,7 +25,7 @@
 }
 
 * {
-  padding: 0;
+  
   margin: 0;
   box-sizing: border-box;
 }
@@ -411,13 +411,13 @@ table td {
 }
 
 .order-ready {
-  color: #2a59d1;
+  color: #1fc834;
   background-color: rgba(62, 121, 247, 0.1);
 }
 
 .order-shipped {
-  color: #00ab6f;
-  background-color: rgba(4, 209, 130, 0.1);
+  color: #6b8079;
+  background-color: rgba(62, 121, 247, 0.1);
 }
 
 .payment-status {
@@ -495,6 +495,11 @@ table td {
 .manage .bx-trash{
   color: #e2140d
 }
+.manage button{
+  background-color: var(--box-bg);
+  border: none;
+  cursor: pointer;
+}
 .box-header .bx-add-to-queue{
   color: #0652dd
 }
@@ -505,4 +510,23 @@ table td {
   border: 1px solid;
   padding: 5px 5px 5px 5px;
   
+}
+#tim{
+  margin-top: 15px;
+}
+#tim input{
+  width: 280px;
+}
+#tim i {
+  position: absolute;
+}
+
+#tim .icon {
+  padding: 12px;
+  min-width: 40px;
+}
+
+#tim .input-field {
+  padding: 9px;
+  text-align: center;
 }
