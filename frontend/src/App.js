@@ -21,14 +21,14 @@ function App() {
 <div className='app'>
 <div className="sidebar">
     <div className="sidebar-logo">
-        <img src="./images/Petslogo.png" alt="Comapny logo"/>
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/280955010_378872454279584_1851209314535231209_n.png?_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=shfIqJQfxV8AX84lTpY&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIppvjHj0aht5U3AFx7SAEKfuxXkO51QxcuSjo2VlowXw&oe=62AF92A3" alt="Comapny logo"/>
         <div className="sidebar-close" id="sidebar-close">
             <i className='bx bx-left-arrow-alt'></i>
         </div>
     </div>
     <div className="sidebar-user">
         <div className="sidebar-user-info">
-            <img src="./images/tommi.jpg" alt="User picture" className="profile-image"/>
+            <img src="https://tudiendanchoi.com/wp-content/uploads/2022/05/z3399223868975_f9672eaf281fbf6771659ccb18692a12.jpg" alt="User picture" className="profile-image"/>
             <div className="sidebar-user-name">
                 UserName
             </div>
@@ -53,19 +53,19 @@ function App() {
         </li>
         <li>
             <a href="/category">
-                <i className='bx bx-shopping-bag'></i>
+            <i class='bx bx-category'></i>
                 <span>QUẢN LÍ DANH MỤC</span>
             </a>
         </li>
         <li>
             <a href="/user">
-                <i className='bx bx-shopping-bag'></i>
+                <i className='bx bx-user-circle'></i>
                 <span>QUẢN LÍ NGƯỜI DÙNG</span>
             </a>
         </li>
         <li className="sidebar-submenu">
             <a href="#" className="sidebar-menu-dropdown">
-                <i className='bx bx-user-circle'></i>
+            <i class='bx bx-user'></i>
                 <span>TÀI KHOẢN</span>
                 <div className="dropdown-icon"></div>
             </a>

@@ -50,7 +50,7 @@ const Product = () => {
                     <div className="col-12">
 
                         <div className="box">
-                            <div className="box-header">
+                            <div className="box-header" id='add'>
                                 <a href="/addProduct"><i className='bx bx-add-to-queue bx-sm'></i> Thêm thú cưng</a>
                             </div>
                             <form id="tim">

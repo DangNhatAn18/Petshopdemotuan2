@@ -50,7 +50,7 @@ const Category = () => {
                     <div className="col-12">
 
                         <div className="box">
-                            <div className="box-header">
+                        <div className="box-header" id='add'>
                                 <a href="/addCategory"><i className='bx bx-add-to-queue bx-sm'></i> Thêm danh mục</a>
                             </div>
                             <div className="box-body overflow-scroll">

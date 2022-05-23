@@ -48,7 +48,7 @@ async function getData() {
                     <div className="col-12">
 
                         <div className="box">
-                            <div className="box-header">
+                        <div className="box-header" id='add'>
                                 <a href="/addUser"><i className='bx bx-add-to-queue bx-sm'></i> Thêm tài khoản</a>
                             </div>
                             <form id="tim">

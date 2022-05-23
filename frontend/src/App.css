@@ -328,6 +328,7 @@ a {
 
 .product-list {
   list-style-type: none;
+  padding-left: 10px;
 }
 
 .product-list-item {
@@ -529,4 +530,10 @@ table td {
 #tim .input-field {
   padding: 9px;
   text-align: center;
+}
+.box #add a{
+  font-size: large;
+}
+.box #add a:hover{
+  color: #0652dd;
 }

@@ -88,60 +88,61 @@ import React from 'react'
            
                 <div className="box f-height">
                     <div className="box-header">
-                        Danh sách bán chạy
+                        Danh Mục Thú Cưng
                     </div>
                     <div className="box-body">
                         <ul className="product-list">
                             <li className="product-list-item">
                                 <div className="item-info">
-                                    <img src="./images/thumb-7.jpg" alt="product image"/>
+                                    <img src="https://dogily.vn/wp-content/uploads/2021/10/cho-poodle-tai-buom-trang-2-thang-tuoi-1-1-250x300.jpg" alt="product image"/>
                                     <div className="item-name">
-                                        <div className="product-name">Jacket</div>
-                                        <div className="text-second">Cloths</div>
+                                        <div className="product-name">Chó Cảnh</div>
+                                        <div className="text-second"></div>
                                     </div>
                                 </div>
                                 <div className="item-sale-info">
-                                    <div className="text-second">Giá</div>
-                                    <div className="product-sales">$5,930</div>
+                                    <div className="text-second"></div>
+                                    <div className="product-sales"></div>
+                                </div>
+                                
+                            </li>
+                            <li className="product-list-item">
+                                <div className="item-info">
+                                    <img src="https://dogily.vn/wp-content/uploads/2021/10/meo-anh-long-ngan-nhap-khau-17-250x300.jpg" alt="product image"/>
+                                    <div className="item-name">
+                                        <div className="product-name">Mèo Cảnh</div>
+                                        <div className="text-second"></div>
+                                    </div>
+                                </div>
+                                <div className="item-sale-info">
+                                   <div className="text-second"></div>
+                                    <div className="product-sales"></div>
                                 </div>
                             </li>
                             <li className="product-list-item">
                                 <div className="item-info">
-                                    <img src="./images/sneaker.jpg" alt="product image"/>
+                                    <img src="https://petviet.vn/wp-content/uploads/2018/09/mua-thuc-an-cho-thu-cung-tai-binh-dinh-800x450.jpg" alt="product image"/>
                                     <div className="item-name">
-                                        <div className="product-name">sneaker</div>
-                                        <div className="text-second">Cloths</div>
+                                        <div className="product-name">Thức ăn cho thú cưng</div>
+                                        <div className="text-second"></div>
                                     </div>
                                 </div>
                                 <div className="item-sale-info">
-                                    <div className="text-second">Giá</div>
-                                    <div className="product-sales">$5,930</div>
+                                    <div className="text-second"></div>
+                                    <div className="product-sales"></div>
                                 </div>
                             </li>
                             <li className="product-list-item">
                                 <div className="item-info">
-                                    <img src="./images/headphone.jpg" alt="product image"/>
+                                    <img src="https://cf.shopee.vn/file/e40390b8ab2f23e8d2c511e3d3862bf4" alt="product image"/>
                                     <div className="item-name">
-                                        <div className="product-name">headphone</div>
-                                        <div className="text-second">Devices</div>
+                                        <div className="product-name">Đồ chơi cho thú cưng</div>
+                                        <div className="text-second"></div>
                                     </div>
                                 </div>
                                 <div className="item-sale-info">
-                                    <div className="text-second">Giá</div>
-                                    <div className="product-sales">$5,930</div>
-                                </div>
-                            </li>
-                            <li className="product-list-item">
-                                <div className="item-info">
-                                    <img src="./images/backpack.jpg" alt="product image"/>
-                                    <div className="item-name">
-                                        <div className="product-name">Backpack</div>
-                                        <div className="text-second">Bags</div>
-                                    </div>
-                                </div>
-                                <div className="item-sale-info">
-                                    <div className="text-second">Giá</div>
-                                    <div className="product-sales">$5,930</div>
+                                    <div className="text-second"></div>
+                                    <div className="product-sales"></div>
                                 </div>
                             </li>
                         </ul>
@@ -151,9 +152,65 @@ import React from 'react'
             </div>
             <div className="col-4 col-md-6 col-sm-12">
              
-                <div className="box f-height">
+            <div className="box f-height">
+                    <div className="box-header">
+                        Danh sách bán chạy
+                    </div>
                     <div className="box-body">
-                        <div id="category-chart"></div>
+                        <ul className="product-list">
+                            <li className="product-list-item">
+                                <div className="item-info">
+                                    <img src="https://tunglocpet.com/wp-content/uploads/2020/01/cho-alabai-con-04.jpg" alt="product image"/>
+                                    <div className="item-name">
+                                        <div className="product-name">alabai</div>
+                                        <div className="text-second">Chó</div>
+                                    </div>
+                                </div>
+                                <div className="item-sale-info">
+                                    <div className="text-second">Giá</div>
+                                    <div className="product-sales">9000000đ</div>
+                                </div>
+                            </li>
+                            <li className="product-list-item">
+                                <div className="item-info">
+                                    <img src="https://zoipet.com/wp-content/uploads/2020/04/meo-anh-long-dai.jpg" alt="product image"/>
+                                    <div className="item-name">
+                                        <div className="product-name">mèo Anh lông dài</div>
+                                        <div className="text-second">Mèo</div>
+                                    </div>
+                                </div>
+                                <div className="item-sale-info">
+                                    <div className="text-second">Giá</div>
+                                    <div className="product-sales">7800000đ</div>
+                                </div>
+                            </li>
+                            <li className="product-list-item">
+                                <div className="item-info">
+                                    <img src="https://lolipet.net/wp-content/uploads/2019/01/hamste-bear1.jpg" alt="product image"/>
+                                    <div className="item-name">
+                                        <div className="product-name">bear</div>
+                                        <div className="text-second">Chuột</div>
+                                    </div>
+                                </div>
+                                <div className="item-sale-info">
+                                    <div className="text-second">Giá</div>
+                                    <div className="product-sales">120000đ</div>
+                                </div>
+                            </li>
+                            <li className="product-list-item">
+                                <div className="item-info">
+                                    <img src="https://vietpetgarden.net/wp-content/uploads/2018/05/hermanns-tortoise_Rudmer-Zwerver_Shutterstock.jpg" alt="product image"/>
+                                    <div className="item-name">
+                                        <div className="product-name">Hermann</div>
+                                        <div className="text-second">Rùa</div>
+                                    </div>
+                                </div>
+                                <div className="item-sale-info">
+                                    <div className="text-second">Giá</div>
+                                    <div className="product-sales">500000đ</div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             
@@ -162,10 +219,10 @@ import React from 'react'
           
                 <div className="box f-height">
                     <div className="box-header">
-                        khách hàng
+                        Biếu đồ 
                     </div>
                     <div className="box-body">
-                        <div id="customer-chart"></div>
+                        <div id="customer-chart">Vẫn đang update</div>
                     </div>
                 </div>
              
