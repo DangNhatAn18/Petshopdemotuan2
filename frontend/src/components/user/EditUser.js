@@ -42,41 +42,45 @@ function EditUser() {
                     -Quản lí khách hàng - sửa người dùng
                 </div>
             </div>
-            <div className="main-content">
-                <div className="row">
-
-                </div>
-                <div className="box">
-                    <div className="box-header">
-                        <div className="control">
-
-                            <div className="row">
-
-                                <div className="col-md-6">
+            <div className="page-body">
+            <div className="row">
+                <div className="col-sm-12">
+                <div class="main-content">
+            <div class="row">
+                
+            </div>
+            <div class="box">
+                <div class="box-header">
                                     <form  >
-                                        <div className="form-group">
-                                            <label for="exampleFormControlInput1">Tên khách hàng</label>
+                                    <div className="form-group row">
+                                            <label className="col-sm-2 col-form-label">Tên khách hàng</label>
+                                            <div className="col-sm-10">
                                             <input value={name}
                                                 onChange={(e) => setData({ ...data, name: e.target.value })}
                                                 type="text" className="form-control" />
                                         </div>
-
-                                        <div className="form-group">
-                                            <label for="exampleFormControlInput1">Số điện thoại</label>
+                                            </div>
+                                        <div className="form-group row">
+                                            <label className="col-sm-2 col-form-label">Số điện thoại</label>
+                                            <div className="col-sm-10">
                                             <input value={phone}
                                                 onChange={(e) => setData({ ...data, phone: e.target.value })}
                                                 type="text" className="form-control" />
                                         </div>
+                                        </div>
 
-                                        <div className="form-group">
-                                            <label for="exampleFormControlInput1">Địa chỉ</label>
+                                        <div className="form-group row">
+                                            <label className="col-sm-2 col-form-label">Địa chỉ</label>
+                                            <div className="col-sm-10">
                                             <input value={address}
                                                 onChange={(e) => setData({ ...data, address: e.target.value })}
                                                 type="text" className="form-control" />
                                         </div>
-                                        <div className="form-group">
-                                            <label for="exampleFormControlInput1">Trạng thái</label>
-                                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                                        </div>
+                                        <div className="form-group row">
+                                            <label className="col-sm-2 col-form-label">Trạng thái</label>
+                                            <div className="col-sm-10">
+                                            <select name="select" class="form-control"
                                                 value={data.status}
                                                 onChange={(e) => setData({ ...data, status: e.target.value })}>
                                                 <option selected>Chọn trạng thái</option>
@@ -84,7 +88,12 @@ function EditUser() {
                                                 <option value="Ẩn">Ẩn</option>
                                             </select>
                                         </div>
-                                        <input onClick={onSubmit} type='submit' />
+                                        </div>
+                                        <div className="form-group row" >
+                                         <div className="col-sm-10">
+                                        <input onClick={onSubmit} type='submit' value="Cập nhật" />
+                                        </div>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
